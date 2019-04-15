@@ -1,5 +1,7 @@
 # **1.k8s部署**
+
 ==环境初始化，所有节点==
+
 **设置集群命令补全**
     source <(kubectl  completion bash)
     echo source <(kubectl  completion bash) >> ~/.bashrc 
@@ -248,6 +250,7 @@ https://nodeip:nodeport
 
 * * *
 
+```
 1、查看kubernetes-dashboard 容器跑在哪台node节点上，这里跑在docker-slave2上
 kubectl get pod -n kube-system -o wide
 2、在docker-slave2节点上查看kubernetes-dashboard容器ID
@@ -261,3 +264,4 @@ docker restart 384d9dc0170b
 6、再次web验证
 ==详细参考：==
 [https://www.cnblogs.com/harlanzhang/p/10045975.html](https://www.cnblogs.com/harlanzhang/p/10045975.html)
+'''
