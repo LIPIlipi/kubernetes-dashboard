@@ -3,8 +3,10 @@
 ==环境初始化，所有节点==
 
 **设置集群命令补全**
+```
     source <(kubectl  completion bash)
-    echo source <(kubectl  completion bash) >> ~/.bashrc 
+    echo source <(kubectl  completion bash) >> ~/.bashrc
+```
 ## **1.1配置静态ip**
     vim /etc/sysconfig/network-script/ifcfg-ens33
 ## **1.2配置hostname**
@@ -242,10 +244,13 @@
 
 
 ## **3.6 dashboard web 验证**
+```
 验证方式：
 在物理机浏览器中输入：
 https://nodeip:nodeport
 如果发现不是私密连接。那可以试着换一个浏览器，在chrome在实验现实就是不是私密链接。
+```
+
 ==不是私密链接的解决办法：==
 
 * * *
