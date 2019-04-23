@@ -46,7 +46,7 @@
 ## **1.7时钟同步**
     systemctl restart chronyd
     systemctl enable chronyd
-    chronyc  soureces
+    chronyc  sources
 
 ## **1.8开启IPV4转发和网桥防火墙支持(配置内核参数)**
     echo 'net.ipv4.ip_forward = 1' >> /etc/sysctl.conf
