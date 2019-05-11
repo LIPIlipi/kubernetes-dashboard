@@ -11,3 +11,5 @@ spec:
   containers:
   - name: container-test
     image: superdm/k8sweb:v4
+#  nodeSelector:
+#     disktype: ssd
