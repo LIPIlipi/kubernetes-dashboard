@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-test
+  namespace: default
+  labels:
+    app: test
+    name: pod-test
+    release: latest
+spec:
+  containers:
+  - name: container-test
+    image: superdm/k8sweb:v4
